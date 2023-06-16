@@ -1,1 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,400&display=swap');
+
+* {
+    margin: 0; padding: 0; box-sizing: border-box;
+    font-family: 'Roboto', sans-serif; 
+}
+:root {
+    --baseBg: rgb(255,203,5);
+    --linearGradientBg: linear-gradient(90deg, rgba(255,203,5,1) 0%, rgba(199,160,8,1) 50%); 
+}
