@@ -1,0 +1,57 @@
+#alert {
+    position: absolute; top: 16.5%; width: 100%; z-index: 1;
+    font-size: 14px; text-align: center; font-weight: bold; letter-spacing: 5px; color: darkred;
+}
+
+main {
+    position: relative; width: 100%; min-height: 82vh; max-height: 100%;
+    background: rgb(42,117,187); background: linear-gradient(180deg, rgba(42,117,187,1) 0%, rgba(60,90,166,1) 80%); 
+    text-align: center;  padding: 1em;
+}
+
+.pokedex-background {
+    width: 100%; max-width: 350px;
+    filter: drop-shadow(0 0 2px #000);
+}
+
+.pokedex-container {
+    display: flex; justify-content: center; align-items: center;   
+    .pokedex-main {
+        p { margin: 0; cursor: default; }
+        .poke-img-container img, .poke-hp, .poke-name, .poke-id, .poke-types-container, .poke-stats-container { position: absolute; }
+        .poke-hp {
+            top: 22%; right: 44%;
+            span { font-size: 8px; margin-right: 2px; }
+        }
+        .poke-id { 
+            top: 27%; right: 56%;
+            font-size: 12px; font-weight: bold;
+        }
+        .poke-img-container img {
+            top: 32%; left: 46.5%;
+            height: 12%;
+        }
+        .poke-name {
+            top: 51%; right: 52%;
+            font-size: 14px; text-transform: capitalize; font-weight: bold; letter-spacing: 1px;
+        }
+        .poke-types-container {
+            top: 50.5%; right: 44.5%;
+            display: inline-block;
+            span {
+                display: block;
+                font-size: 13px; line-height: 16px; letter-spacing: 1px; text-decoration: underline; text-transform: capitalize;
+            }
+        }
+        .poke-stats-container {            
+            width: 16%; top: 64%; right: 43%;
+            padding: 5px;  
+            p {
+                display: flex; justify-content: space-between; align-content: space-between;
+                margin: 0; color: white;
+                font-size: 13px; font-weight: bold; letter-spacing: 1px;
+                span { color: tomato; }
+            }
+        }
+    }
+}

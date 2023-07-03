@@ -1,0 +1,19 @@
+.pokedex-input {    
+    display: flex; justify-content: center; align-items: center;
+    padding: 1em;
+    background: rgb(42,117,187);
+    input {
+        width: 60%; margin: 0 5px 0 0; filter: drop-shadow(0 0 2px #000);
+        text-align: center; font-size: 16px; letter-spacing: 2px; text-transform: capitalize; font-weight: bold;
+        &::placeholder { font-size: 14px; text-transform: none; font-weight: 100; }
+    }
+    button {
+        background-color: transparent; border: none;
+        transition: all 0.25s;
+        &:hover { opacity: .75; }
+        img { 
+            width: 40px; height: auto; 
+            filter: drop-shadow(0 0 2px #000);
+        }
+    }
+}

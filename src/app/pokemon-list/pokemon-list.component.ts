@@ -1,6 +1,5 @@
 import { Component, ViewContainerRef, Input, OnInit, ViewChild } from '@angular/core';
 import { PokemonService } from '../service/pokemon.service';
-import { Observable, map, pipe, tap } from 'rxjs';
 
 @Component({
   selector: 'app-pokemon-list',
@@ -11,7 +10,7 @@ export class PokemonListComponent implements OnInit {
 
   constructor(private pokemonService: PokemonService) { }
 
-  pokemons: any[] = [] 
+  pokemons: any[] = []   
   limit: number = 19
   offset: number = 1  
 

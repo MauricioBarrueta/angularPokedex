@@ -1,19 +1,24 @@
-<div class="pokemon-list">
+<div class="paginator">
+    <button class="btn btn-dark" (click)="prevPage()" title="Anterior"></button>
+    <span>Barra de navegación</span>
+    <button class="btn btn-dark" (click)="nextPage()" title="Siguiente"></button>
+</div>
+<div class="pokemon-list-container">
     <div class="pokemon-card" *ngFor="let pokemon of pokemons">
-        <p class="poke-id">#{{pokemon.id}}</p>
-        <img [src]="pokemon['sprites']['versions']['generation-v']['black-white']['animated'].front_default">
-        <p class="poke-name">{{pokemon.name}}</p>        
-        <p class="poke-type">{{pokemon.types[0].type.name}}</p>
+        <p class="poke-name">#{{pokemon.id}}: {{pokemon.name}}</p>
+        <div class="img-container">
+            <img [src]="pokemon['sprites']['versions']['generation-v']['black-white']['animated'].front_default">
+        </div>
+        <div class="poke-type">
+            <p *ngFor="let type of pokemon.types">{{type.type.name}}</p>
+        </div>        
         <div class="poke-stats">
             <p>Hp: <span>{{pokemon.stats[0].base_stat}}</span></p>
             <p>Attack: <span>{{pokemon.stats[1].base_stat}}</span></p>  
-            <p>Defense: <span>{{pokemon.stats[1].base_stat}}</span></p>          
+            <p>Defense: <span>{{pokemon.stats[2].base_stat}}</span></p>
+            <p>Speed: <span>{{pokemon.stats[5].base_stat}}</span></p>          
             <p>Height: <span>{{pokemon.height}}</span></p>
             <p>Weight: <span>{{pokemon.weight}}</span></p>
         </div>
     </div>
-</div>
-<div class="paginator">
-    <button class="btn btn-dark" (click)="prevPage()">Anterior</button>
-    <button class="btn btn-dark" (click)="nextPage()">Siguiente</button>
 </div>
