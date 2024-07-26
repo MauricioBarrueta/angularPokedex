@@ -1,3 +1,4 @@
 export const environment = {
-    url: 'https://pokeapi.co/api/v2/pokemon'
+    url: 'https://pokeapi.co/api/v2/pokemon',
+    imgPath: '../assets/img/'
 };

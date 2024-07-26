@@ -1,10 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,400&display=swap');
-
+@import url('https://fonts.cdnfonts.com/css/pokemon-solid');
 * {
     margin: 0; padding: 0; box-sizing: border-box;
-    font-family: 'Roboto', sans-serif; 
+    font-family: 'Pokemon Solid', sans-serif, FontAwesome; 
 }
 :root {
     --baseBg: rgb(255,203,5);
     --linearGradientBg: linear-gradient(90deg, rgba(255,203,5,1) 0%, rgba(199,160,8,1) 50%); 
+
+    //* Color Palette
+    --red: #ff0000;
+    --bostonUniRed: #cc0000;
+    --ceruleanBlue: #3b4cca;
+    --goldenYellow: #ffde00;
+    --goldFoil: #b3a125;
+}
+
+body {
+    background-color:  var(--ceruleanBlue); color: white;
+    text-align: center;
 }

@@ -1,20 +1,31 @@
+header, .api-link { display: flex; }
+
 header {
-    position: relative; display: flex; justify-content: space-around; align-items: center;
+    position: relative; justify-content: space-between; align-items: center;
     padding: 10px; text-align: center;
-    background-color: #FB1B1B;
-    box-shadow: 0px 10px 10px -5px rgba(0,0,0,0.75);  
+    background-color: var(--bostonUniRed);
+    box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, .75);  
     button { 
-        font-size: 13px; 
-    &::before { font-family: FontAwesome; margin-right: 10px; }
-    &:nth-child(1)::before { content: "\f0ca"; }
-    &:nth-child(3)::before { content: "\f0b0"; }
-    }    
-    a {       
-        font-size: 18px; text-transform: uppercase; font-weight: bolder; 
-        text-decoration: none; letter-spacing: 5px; margin-inline: 5px;
-        cursor: pointer; color: white;
-        &:hover {
-            text-decoration: underline double;
-        }       
+        display: inline-flex; align-items: center;  
+        border: 0; transition: all .4s;
+        font-size: 14px; letter-spacing: 3px;   
+        background-color: transparent; color: white;
+        &:hover { color: var(--goldenYellow); }
+        &:active { background-color: transparent !important; color: white !important; }
+
+        img { margin-right: 10px; filter: drop-shadow(0 0 2px #000); }
+    }   
+
+    .api-link {
+        justify-content: center; align-items: flex-start;
+        text-decoration: none; letter-spacing: 1px; color: white;
+        span {
+            height: fit-content;
+            font-size: 9px;
+            margin-right: 5px;
+        }
+        img {
+            width: 35%;
+        }
     }
 }

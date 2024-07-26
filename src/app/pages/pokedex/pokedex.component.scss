@@ -1,0 +1,90 @@
+.pokedex-input, .pokedex-container, .poke-stats-container, .poke-stats-container p { 
+    display: flex; align-items: center; justify-content: center; 
+}
+
+.pokedex-input {
+    margin: 5px 0 auto; color: rgba(0, 0, 0, .65);
+    form {
+        width: 100%; 
+        border-bottom: 2px solid var(--goldFoil); padding: 0.5rem;
+        input {
+            width: 75%; height: 50px; 
+            margin: 0 auto; padding: 0.5rem; padding-bottom: 15px;
+            border-color: var(--bostonUniRed); color: var(--ceruleanBlue);
+            font-size: 16px; text-align: center; letter-spacing: 2px; text-transform: capitalize;
+            &::placeholder {
+                font-size: 13px; text-transform: none;
+                opacity: .75;
+            }
+        }
+    }
+}
+
+#alert {
+    width: 100%; display: inline-block; 
+    font-size: 16px; text-align: center; letter-spacing: 5px; 
+    color: var(--goldenYellow); margin: 10px 0 auto;
+}
+main {
+    position: relative; display: inline-block;
+    padding: 0.5rem; margin-top: 15px;
+
+    .pokedex-bg { 
+        width: 100%; max-width: 425px;   
+        filter: drop-shadow(0 0 8px #000);     
+    }
+
+    .pokedex-container {
+        .pokedex-main {
+            p { margin: 0; cursor: default; }
+            .poke-img-container img, .poke-hp, .poke-name, .poke-id, .poke-types-container, .poke-stats-container { 
+                position: absolute; letter-spacing: 1px;
+                color: rgba(0, 0, 0, .65);
+            }
+            
+            .poke-hp, .poke-id, .poke-types-container {
+                top: 22%; right: 25%;
+                font-size: 18px;
+                span { font-size: 10px; color: var(--bostonUniRed); }
+            }
+
+            .poke-id { 
+                width: 100%; top: 23%; right: 32%;
+                font-size: 14px; letter-spacing: 2px;
+            }
+
+            .poke-img-container img {
+                top: 32%; left: 36%;
+                height: 15%;
+            }
+
+            .poke-name {
+                width: 100%; top: 55%; right: 22%;
+                font-size: 15px; text-transform: capitalize;
+            }
+
+            .poke-types-container {
+                top: 54%; right: 25%; display: inline-block;
+                text-align: justify; 
+                p {
+                    display: block;
+                    font-size: 13px; text-transform: capitalize;
+                }
+            }
+            .poke-stats-container {            
+                width: 65%; height: 22%; top: 68%; right: 22%; 
+                flex-direction: column; align-items: normal;
+                padding: 5px;
+                p {
+                    justify-content: space-between; align-content: space-between;
+                    margin: 0 0 5px 0; border-bottom: 1px dashed rgba(223, 223, 223, .65);
+                    color: white; font-size: 14px; letter-spacing: 1px;
+                    span { color: var(--goldenYellow); }
+                }
+            }
+        }
+    }
+}
+
+
+

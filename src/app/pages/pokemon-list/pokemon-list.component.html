@@ -1,0 +1,25 @@
+<div class="paginator">
+    <button class="btn btn-dark" (click)="prevPage()" [disabled]="isFirstPage">&#xf359; Página anterior</button>
+    <span>Barra de navegación</span>
+    <button class="btn btn-dark" (click)="nextPage()">Siguiente página &#xf35a;</button>
+</div>
+
+<div class="pokemon-list-container">
+    <div class="pokemon-card" *ngFor="let pokemon of pokemonList$">
+        <p class="poke-name"><img src="https://api.iconify.design/ic:baseline-catching-pokemon.svg"> {{pokemon.name}} <span class="poke-id">#{{pokemon.id}}</span></p>
+        <div class="img-container">
+            <img [src]="pokemon['sprites']['versions']['generation-v']['black-white']['animated'].front_default">
+        </div>
+        <div class="poke-type">
+            <p *ngFor="let type of pokemon.types">{{type.type.name}}</p>
+        </div>        
+        <div class="poke-stats">
+            <p class="stat">Hp <span>{{pokemon.stats[0].base_stat}}</span></p>
+            <p class="stat">Attack <span>{{pokemon.stats[1].base_stat}}</span></p>  
+            <p class="stat">Defense <span>{{pokemon.stats[2].base_stat}}</span></p>
+            <p class="stat">Speed <span>{{pokemon.stats[5].base_stat}}</span></p>          
+            <p class="stat">Height <span>{{pokemon.height}}</span></p>
+            <p class="stat">Weight <span>{{pokemon.weight}}</span></p>
+        </div>
+    </div>
+</div>

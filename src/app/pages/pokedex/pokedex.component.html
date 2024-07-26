@@ -1,0 +1,35 @@
+<div class="pokedex-input form-group">
+    <form action="" (submit)="getPokemonNameValue(pokemonName)">
+        <input class="form-control" type="text" name="pokemon-name" [(ngModel)]="pokemonName" 
+            placeholder="Ingresa el nombre del Pokémon que estás buscando y presiona la tecla 'Enter ↵' para iniciar la búsqueda:">
+    </form>    
+</div>
+
+<span id="alert">{{alertTextValue}}</span>
+<main>
+    <img src="{{imgPath}}pokedex.png" class="pokedex-bg">
+
+    <div class="pokedex-container" *ngFor="let data of pokemon$">        
+        <div class="pokedex-main" >
+            <div class="poke-img-container">
+                <img [src]="data['sprites']['versions']['generation-v']['black-white']['animated'].front_default">
+            </div>
+            <p class="poke-hp"><span>HP:</span>{{data.stats[0].base_stat}}</p>
+            <p class="poke-id"><span>#</span>{{data.id}}</p>
+            <p class="poke-name">{{data.name}}</p>
+            <div class="poke-types-container">
+                <p *ngFor="let type of data.types"><span>*</span> {{type.type.name}}</p>
+            </div>
+            <div class="poke-stats-container">
+                <p>Attack <span>{{data.stats[1].base_stat}}</span></p>
+                <p>Defence <span>{{data.stats[2].base_stat}}</span></p>
+                <p>Speed <span>{{data.stats[5].base_stat}}</span></p>
+                <p>Special Attack <span>{{data.stats[3].base_stat}}</span></p>
+                <p>Special Defence <span>{{data.stats[4].base_stat}}</span></p>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+   

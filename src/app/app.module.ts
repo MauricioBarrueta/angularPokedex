@@ -8,24 +8,20 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 
 import { HeaderComponent } from './header/header.component';
-import { PokemonListComponent } from './pokemon-list/pokemon-list.component';
-import { PokedexComponent } from './pokedex/pokedex.component';
-import { PokemonComponent } from './pokedex/pokemon/pokemon.component';
+import { PagesModule } from './pages/pages.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    PokemonListComponent,
-    PokedexComponent,
-    PokemonComponent      
+    HeaderComponent        
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule, 
     CommonModule,
-    FormsModule
+    FormsModule, 
+    PagesModule
    
   ],
   providers: [],
