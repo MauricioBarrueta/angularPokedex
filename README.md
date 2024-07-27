@@ -3,7 +3,8 @@
 🇺🇸 This website consumes the public API of the famous Pokémon series, lists all existing Pokémon including their characteristics,
    and it's also possible to filter by the name of the Pokémon, simulating the Pokédex.
 
-![AngularPokedex](https://github.com/MauricioBarrueta/angularPokedex/assets/60496232/5d3d1a13-47cf-4eaf-a8ec-7d45f8de3348)
+
+![angularPokedex](https://github.com/user-attachments/assets/27e48f76-d962-49ea-bc7d-e49b016dfec0)
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.5.
