@@ -5,8 +5,7 @@
 🔗 https://pokemondb-d9a4c.web.app/
 
 
-![angularPokedex](https://github.com/user-attachments/assets/96a69e24-ac7c-4d49-8ce7-b205abb3ef7a)
-
+![AngularPokedex](https://github.com/user-attachments/assets/3e02cdf9-7890-4c8d-8149-f3ea40c81df7)
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.5.
