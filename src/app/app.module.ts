@@ -9,6 +9,8 @@ import { FormsModule } from '@angular/forms';
 
 import { HeaderComponent } from './header/header.component';
 import { PagesModule } from './pages/pages.module';
+import { BrowserAnimationsModule, provideAnimations } from '@angular/platform-browser/animations';
+import { MatPaginatorModule } from '@angular/material/paginator'
 
 @NgModule({
   declarations: [
@@ -21,10 +23,13 @@ import { PagesModule } from './pages/pages.module';
     AppRoutingModule, 
     CommonModule,
     FormsModule, 
-    PagesModule
+    PagesModule, BrowserAnimationsModule,
+    MatPaginatorModule
    
   ],
-  providers: [],
+  providers: [
+    provideAnimations() // Angular Material Animations
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

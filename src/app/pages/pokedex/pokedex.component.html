@@ -1,11 +1,13 @@
 <div class="pokedex-input form-group">
     <form action="" (submit)="getPokemonNameValue(pokemonName)">
-        <input class="form-control" type="text" name="pokemon-name" [(ngModel)]="pokemonName" 
-            placeholder="Ingresa el nombre del Pokémon que estás buscando y presiona la tecla 'Enter ↵' para iniciar la búsqueda:">
+        <img width="40" height="40" src="https://img.icons8.com/color/48/pokedex.png"/>
+            <input type="text" class="form-control" id="name" name="pokemon-name" [(ngModel)]="pokemonName" placeholder="Ingresa el nombre de cualquier Pokémon para consultar sus estadísticas:">
+        <img width="40" height="40" src="https://img.icons8.com/color/48/pokedex.png"/>
+        <label for="name" class="form-label">Presiona la tecla 'Enter ↵' para iniciar la búsqueda</label>
     </form>    
 </div>
 
-<span id="alert">{{alertTextValue}}</span>
+<span id="alert" *ngIf="alertTextValue.length > 0">{{alertTextValue}}</span>
 <main>
     <img src="{{imgPath}}pokedex.png" class="pokedex-bg">
 
@@ -30,6 +32,3 @@
         </div>
     </div>
 </main>
-
-
-   

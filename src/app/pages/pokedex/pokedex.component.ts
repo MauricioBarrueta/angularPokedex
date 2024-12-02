@@ -46,7 +46,5 @@ export class PokedexComponent implements OnDestroy {
         )
         .subscribe()    
     }    
-  }
-
-  
+  }  
 }

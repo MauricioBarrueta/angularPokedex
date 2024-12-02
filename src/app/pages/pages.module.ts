@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { PokedexComponent } from './pokedex/pokedex.component';
 import { PokemonListComponent } from './pokemon-list/pokemon-list.component';
 import { RouterModule } from '@angular/router';
+import { MatPaginatorModule } from '@angular/material/paginator';
 
 
 
@@ -14,7 +15,8 @@ import { RouterModule } from '@angular/router';
   ],
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
+    MatPaginatorModule
   ],
   exports: [
     RouterModule,

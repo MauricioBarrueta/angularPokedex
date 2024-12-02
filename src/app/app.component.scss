@@ -1,0 +1,8 @@
+.to-top {
+    position: fixed; bottom: 1%; right: 2%; z-index: 9999; 
+    background-color: transparent; color: var(--goldenYellow); border: none; 
+    font-size: 50px; filter: drop-shadow(2px 2px 1px #000) drop-shadow(-2px -2px 1px #000) drop-shadow(0 0 1px #000);
+    transition: all .6s; opacity: 0; transform: translateY(100px);
+    &:hover { scale: 1.1; animation: fa-bounce 1s ease-out infinite; }
+}
+.to-top.show-btn { opacity: 1; transform: translateY(0); }

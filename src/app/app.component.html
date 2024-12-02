@@ -1,2 +1,6 @@
 <app-header></app-header>
 <router-outlet></router-outlet>
+<!-- Scroll to Top Button -->
+<button class="to-top" [ngClass]="{'show-btn': windowScrolled}" (click)="scrollToTop()">
+    <i class="fa-solid fa-caret-up"></i>
+</button>
