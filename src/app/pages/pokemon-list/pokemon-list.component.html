@@ -1,21 +1,21 @@
-<mat-paginator class="paginator" #paginator style-paginator showFirstLastButtons [length]="length" [pageIndex]="pageIndex" [pageSize]="pageSize" (page)="getCurrentPage($event)" [pageSizeOptions]="[15, 30, 60, 90, 120, 150]"></mat-paginator>
-<div class="pokemon-list-container">
+<mat-paginator class="paginator d-flex" #paginator style-paginator showFirstLastButtons [length]="length" [pageIndex]="pageIndex" [pageSize]="pageSize" (page)="getCurrentPage($event)" [pageSizeOptions]="[15, 30, 60, 90, 120, 150]"></mat-paginator>
+<div class="pokemon-list-container d-flex">
     <div class="pokemon-card" *ngFor="let pokemon of pokemonData$|slice:(paginator.pageIndex * paginator.pageSize) 
         : ((paginator.pageIndex + 1) * paginator.pageSize)">
         <p class="poke-name"><img src="https://api.iconify.design/ic:baseline-catching-pokemon.svg"> {{pokemon.name}} <span class="poke-id">#{{pokemon.id}}</span></p>
         <div class="img-container">
             <img [src]="pokemon['sprites']['versions']['generation-v']['black-white']['animated'].front_default">
         </div>
-        <div class="poke-type">
+        <div class="poke-type d-flex">
             <p *ngFor="let type of pokemon.types">{{type.type.name}}</p>
         </div>        
         <div class="poke-stats">
-            <p class="stat">Hp <span>{{pokemon.stats[0].base_stat}}</span></p>
-            <p class="stat">Attack <span>{{pokemon.stats[1].base_stat}}</span></p>  
-            <p class="stat">Defense <span>{{pokemon.stats[2].base_stat}}</span></p>
-            <p class="stat">Speed <span>{{pokemon.stats[5].base_stat}}</span></p>          
-            <p class="stat">Height <span>{{pokemon.height}}</span></p>
-            <p class="stat">Weight <span>{{pokemon.weight}}</span></p>
+            <p class="stat d-flex">Hp <span>{{pokemon.stats[0].base_stat}}</span></p>
+            <p class="stat d-flex">Attack <span>{{pokemon.stats[1].base_stat}}</span></p>  
+            <p class="stat d-flex">Defense <span>{{pokemon.stats[2].base_stat}}</span></p>
+            <p class="stat d-flex">Speed <span>{{pokemon.stats[5].base_stat}}</span></p>          
+            <p class="stat d-flex">Height <span>{{pokemon.height}}</span></p>
+            <p class="stat d-flex">Weight <span>{{pokemon.weight}}</span></p>
         </div>
     </div>
 </div>

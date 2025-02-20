@@ -4,11 +4,11 @@ import { environment } from 'src/environments/environment';
 @Component({
   selector: 'app-header',
   template: `
-    <header>      
+    <header class="d-flex">      
       <button class="btn btn-light" (click)="redirectToList(1)">
         <img src="{{imgPath}}card-list.webp" width="35" height="40"> Listar Pokemones
       </button>
-      <a class="api-link" [href]="'https://pokeapi.co/docs/v2#pokemon-section'" target="_blank" title="Sitio web">
+      <a class="api-link d-flex" [href]="'https://pokeapi.co/docs/v2#pokemon-section'" target="_blank" title="Sitio web">
         <span>Powered by:</span>
         <img src="{{imgPath}}/pokeapi.png">
       </a>

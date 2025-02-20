@@ -1,11 +1,16 @@
-.paginator, .pokemon-list-container, .poke-type, .stat { display: flex; align-items: center; }
+.paginator, .pokemon-list-container, .poke-type, .stat { align-items: center; }
 
 /* Navbar */
 .paginator { background-color: var(--goldenYellow); color: rgba(0, 0, 0, .65); }
 .paginator {
     height: 60px; justify-content: center; cursor: default;
     text-align: center; font-size: 14px; color: rgba(0, 0, 0, 0.65);
-    padding: 0.5rem; margin-bottom: 10px; border-bottom: 2px solid var(--goldFoil);         
+    padding: 0.5rem; margin-bottom: 10px; border-bottom: 2px solid var(--goldFoil);      
+    ::ng-deep .mat-mdc-paginator-range-actions { 
+        button {
+            filter: invert(21%) sepia(86%) saturate(2298%) hue-rotate(227deg) brightness(94%) contrast(86%);
+        }
+    }   
 }
 /* Cards Container */
 .pokemon-list-container { 
@@ -51,6 +56,17 @@
                     font-weight: bold; color: var(--red);
                 }
             }
+        }        
+    }    
+}
+
+@media screen and (max-width: 780px) {
+    .paginator {
+        height: auto; padding: 1em 0 .25rem 0;
+        font-size: 11px; 
+        ::ng-deep .mat-mdc-paginator-container {
+            justify-content: center; flex-direction: column;
+            ::ng-deep .mat-mdc-paginator-page-size { align-items: center; }
         }        
     }    
 }
