@@ -1,11 +1,11 @@
-🇲🇽 Este sitio web permite listar todos los Pokémones existentes de la famosa serie Pokémon, además de poder filtrarlos por su nombre, simulando el Pokédex.
+🇲🇽 Sitio web desarrollado con Angular y TypeScript, SCSS, Angular Material y Bootstrap, publicado con Firebase Hosting y conectado a PokeAPI (pokeapi.co).
 
-🇺🇸 This website allows you to list all existing Pokémon from the famous Pokémon series, as well as being able to filter them by name, simulating the Pokédex.
+
+🇺🇸 Website developed with Angular and TypeScript, SCSS, Angular Material and Bootstrap, published with Firebase Hosting and connected to PokeAPI (pokeapi.co).
 
 🔗 https://pokemondb-d9a4c.web.app/
 
-
-![AngularPokedex](https://github.com/user-attachments/assets/3e02cdf9-7890-4c8d-8149-f3ea40c81df7)
+![pokeapi](https://github.com/user-attachments/assets/ef01a1da-b00e-4d5f-9394-0350152114d9)
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.5.
